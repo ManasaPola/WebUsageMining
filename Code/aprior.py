@@ -1,4 +1,4 @@
-import pickle
+# import pickle
 from efficient_apriori import apriori
 import csv
 import pandas as pd
