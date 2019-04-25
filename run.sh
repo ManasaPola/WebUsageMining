@@ -1,4 +1,5 @@
 clear
+# !/usr/bin/env python3
 pip3 install efficient-apriori
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "$SCRIPT_DIR"
