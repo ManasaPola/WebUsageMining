@@ -1,9 +1,9 @@
 # import pickle
 from efficient_apriori import apriori
-import csv
-import pandas as pd
-
-from itertools import combinations
+# import csv
+# import pandas as pd
+#
+# from itertools import combinations
 
 
 # with open('usersessions.pickle', 'rb') as handle:
