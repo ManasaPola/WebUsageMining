@@ -1,0 +1,15 @@
+('/history',): 11361
+('/history/apollo',): 14332
+('/history/apollo/apollo-13',): 14563
+('/history/apollo/images',): 41664
+('/htbin',): 21184, ('/icons',): 16458
+('/images',): 131192
+('/shuttle/countdown',): 51362
+('/shuttle/countdown/video',): 16302
+('/shuttle/missions',): 23652
+('/shuttle/missions/sts-70',): 19067
+('/shuttle/missions/sts-71',): 20516
+('/shuttle/missions/sts-71/images',): 16925
+('/shuttle/missions/sts-71/movies',): 12550
+('/shuttle/resources/orbiters',): 10648
+('/shuttle/technology/sts-newsref',): 16033

@@ -1,0 +1,15 @@
+# Apriori Algorithm code for Method - 1
+library(dplyr)
+library(tidyr)
+library(devtools)
+library(DSR)
+library(arules)
+# mydata <- read.csv("../Data/julydata200.csv", header=TRUE)
+# mydata = subset(mydata, select = -c(host, domain, date, time, request, requestverb, replycode))
+# nasaLOG2 <- separate(mydata, path, into = c("pathLvl1", "pathLvl2", "pathLvl3", "pathLvl4", "pathLvl5"), sep = "/")
+# nasaLOG2 = subset(nasaLOG2, select = -c(pathLvl1))
+nasaLOG2 <- read.csv("../Data/nasaLOG2", header=TRUE)
+rules.all <- apriori(nasaLOG2)
+inspect(rules.all)
+rules <- as(rules.all, "data.frame");
+write.csv(rules, file = "../Data/aprioriRules.csv")

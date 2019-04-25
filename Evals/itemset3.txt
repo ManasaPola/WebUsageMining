@@ -1,0 +1,2 @@
+('/history/apollo', '/history/apollo/images', '/images'): 10569
+('/images', '/shuttle/countdown', '/shuttle/countdown/video'): 10844

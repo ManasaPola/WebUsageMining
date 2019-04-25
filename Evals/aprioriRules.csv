@@ -1,0 +1,5 @@
+,rules,support,confidence,lift,count
+1,{pathLvl3=apollo} => {pathLvl2=history},0.129670052,1,6.36592686,220034
+2,{pathLvl2=history} => {pathLvl3=apollo},0.129670052,0.82547007,6.36592686,220034
+3,{pathLvl2=images} => {extension=gif},0.312755322,0.987854409,1.812005589,530707
+4,{pathLvl3=missions} => {pathLvl2=shuttle},0.211789783,1,2.758726308,359381
