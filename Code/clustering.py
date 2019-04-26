@@ -42,26 +42,21 @@ def construct_matrix():
 def main():
     dimensionality_reduction_algo = PCA(n_components=20)
     matrix = construct_matrix()
-
-  #  with open('matrix.pickle', 'wb') as handle:
-   #     pickle.dump(matrix, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
-    # with open('matrix.pickle', 'rb') as handle:
-    #      matrix = pickle.load(handle)
-    # print(len(matrix))
-    # print("enter")
     transformed = dimensionality_reduction_algo.fit_transform(matrix)
     cosine_matrix = cosine_similarity(transformed)
+    km = KMeans(n_clusters=3, init='k-means++')
+    eigen_values, eigen_vectors = np.linalg.eigh(cosine_matrix)
+    km.fit(eigen_vectors[:, 2:4])
+    #  print("enter")
+    labels = km.predict(cosine_matrix)
+    print(labels)
 
-    # with open('similarity.pickle', 'wb') as handle:
-    #     pickle.dump(cosine_matrix, handle, protocol=pickle.HIGHEST_PROTOCOL)
-   # cosine_matrix=np.matrix(cosine_matrix)
-   #  print("k_means")
-   km = KMeans(n_clusters=3, init='k-means++')
-   eigen_values, eigen_vectors = np.linalg.eigh(cosine_matrix)
-   km.fit(eigen_vectors[:, 2:4])
-   #  print("enter")
-   labels = km.predict(cosine_matrix)
-   print(labels)
+      #  with open('matrix.pickle', 'wb') as handle:
+       #     pickle.dump(matrix, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+        # with open('matrix.pickle', 'rb') as handle:
+        #      matrix = pickle.load(handle)
+        # print(len(matrix))
+        # print("enter")
 
 main()
