@@ -17,7 +17,11 @@ This project helps us to observe and analyze interesting patterns in web usage d
 Below instructions helps you setup and get started with this project.
 
 ### Our dataset is very large to preprocess so we uploaded processed data so please run the script on the processed data.
-Execute "./run.sh" 
+Execute "./apriori.sh" - To run the apriori algorithm on the dataset and this Extracts frequently co-accessed pages within a single request.
+Execute "./apriori_usersession.sh"  - To extract co-accessed web links.
+Execute "./clustering.sh" - to cluster the url's and this also includes constructing page co-occurence matrix and Path similarity matrix.
+
+### Note: We ran these files in Hadoop system, because it is taking very long time than usual in local machine because of large amount of data.
 
 Detailed Process and File Description
 1. preprocess.py to convert raw data logs into required format.
