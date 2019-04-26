@@ -41,9 +41,7 @@ def construct_matrix():
 
 def main():
     dimensionality_reduction_algo = PCA(n_components=20)
-
-
-  matrix = construct_matrix()
+    matrix = construct_matrix()
 
   #  with open('matrix.pickle', 'wb') as handle:
    #     pickle.dump(matrix, handle, protocol=pickle.HIGHEST_PROTOCOL)
