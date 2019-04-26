@@ -8,6 +8,11 @@ echo "$SCRIPT_DIR"
 cd  "${SCRIPT_DIR}/Code"
 python3 apriori.py
 
+
+sudo apt-get -y install r-base
+RScript aprioriAlgo.r
+
+
 pip3 install pickle
 pip3 install numpy
 pip3 install scikit-learn
